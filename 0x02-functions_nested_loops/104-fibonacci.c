@@ -8,18 +8,20 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	int i = 1, j = 1, temp;
+	unsigned long long i = 1, j = 2, temp;
 	int l;
 
-	for (l = 0; l < 98; l++)
-	{
-		if (l != 97)
-			printf("%d, ", j);
-		else
-			printf("%d\n", j);
+	printf("1, 2, ");
+
+	for (l = 0; l < 96; l++) {
 		temp = i;
 		i = j;
 		j = temp + i;
+
+		if (l != 95)
+			printf("%llu, ", j);
+		else
+			printf("%llu\n", j);
 	}
 
 	return 0;
