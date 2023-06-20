@@ -14,9 +14,9 @@ int main(void)
 	for (l = 0; l < 98; l++)
 	{
 		if (l != 97)
-			printf("%d, ", (int) j);
-		else 
-			printf("%d\n", (int) j);
+			printf("%.0f, ", j);
+		else
+			printf("%.0f\n", j);
 		temp = i;
 		i = j;
 		j = temp + i;
