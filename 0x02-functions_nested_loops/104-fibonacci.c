@@ -8,19 +8,19 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-	double i = 1, j = 1, temp;
+	int i = 1, j = 1, temp;
 	int l;
 
 	for (l = 0; l < 98; l++)
 	{
 		if (l != 97)
-			printf("%.0f, ", j);
+			printf("%d, ", j);
 		else
-			printf("%.0f\n", j);
+			printf("%d\n", j);
 		temp = i;
 		i = j;
 		j = temp + i;
 	}
 
-	return (0);
+	return 0;
 }
